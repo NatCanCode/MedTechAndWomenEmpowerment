@@ -1,0 +1,368 @@
+/* Bordure pour vérifer blocs */
+/* section{
+    border: 4px solid red;
+}
+
+header, footer{
+    border: 2px solid blue;
+}
+
+div, nav, article, form{
+    border: 2px solid green;
+} */
+
+/* section{
+    margin-bottom: 70px;
+} */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.flex{
+    display: flex;
+    /* justify-content: space-between;
+    align-items: center; */
+}
+
+.column{
+    flex-direction: column;
+}
+
+img{
+    /* garder ratio d'une image  */
+    object-fit: cover;
+    /* reponsive */
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    background-color: #FFFFF4;
+}
+
+h2{
+    font-family: 'Limelight', cursive;
+    color: #02505A;
+    font-size: clamp(40px,10vw, 64px);
+    line-height: 78px;
+    letter-spacing: -0.05em;
+    margin-bottom: 3%;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    color: #1A203C;
+    font-style: regular;
+    font-size: clamp(12px, 10vw, 18px);
+    line-height: 21px;
+    font-size: 100%;
+    /* vertical-align: baseline;
+    text-align: left; */
+    /* width: 45%; */
+}
+
+p span{
+    font-family: 'Roboto', sans-serif;
+    color: #02505A;
+    font-weight: 500;
+}
+
+/* color block min-height: 100vh;  */
+
+/* HOMEPAGE ====================================== */
+/* Header ======================================== */
+header{
+    /* width: min(1198px, 100%); */
+    width: 100%;
+    margin: auto;
+    /* padding-top: 25px; */
+}
+
+
+/* HEADER Nav burger ======================================== */
+nav{
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background-color: #FFFFF4;
+}
+
+/* section{
+    min-height: 500px;
+} */
+
+.logo{
+    padding: 5px;
+
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    /* increase width to get more space between text  */
+    width: 50%;
+ }
+
+.nav-links li{
+     list-style: none;
+ }
+
+.nav-links a{
+    color: #02505A;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 18px;
+    transition: color .5s;
+}
+
+nav,
+button{
+    cursor: pointer;
+}
+
+.nav-links a:hover {
+    /* color: #02505A; */
+    /* color: #619699; */
+    color: #AFC8B5;
+}
+
+.burger{
+     display: none;
+     cursor: pointer;
+     padding: 10px;
+ }
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #02505A;
+    margin: 5px;
+    transition: all 0.5s ease;
+}
+/* HOMEPAGE TITLE ================================ */
+.homepageContainer{
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    height: min(753px, 100%);
+    /* border: 4px solid purple; */
+}
+
+.blocImage1{
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap-reverse;
+}
+
+.box1{
+    width:634px;
+    height:753px;
+    background: #AFC8B5;
+    /* flex-wrap: wrap-reverse; */
+    transform: translateX(0%);
+    z-index: -1;
+}
+
+.peace{
+    position: absolute;
+    width: min(422px, 100%);
+    height: min(562px, 100%);
+    left: 50%;
+    top: 20%;
+    /* z-index: 1; */
+}
+
+/* .hide{
+} */
+
+h1{
+    /* margin-left: 100px; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    /* clamp to check  */
+    font-size: clamp(30px,10vw, 57px);
+    line-height: 69px;
+    color: #1A203C;
+    /* flex-wrap: wrap-reverse; */
+    margin-right: 11%;
+}
+
+h1 span{
+    font-family: 'Limelight', cursive;
+    /* clamp to add  */
+    font-size: 96px;
+    line-height: 90px;
+    /* or 94% */
+    letter-spacing: -0.05em;
+    color: #02505A;
+}
+
+/* CODEUSES ============================== */
+
+
+/* TYPE 1 ================================ */
+.type1Container{
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    height: min(753px, 100%);
+    /* border: 4px solid purple; */
+}
+
+.blocImage3{
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap-reverse;
+}
+
+.box3{
+    width:634px;
+    height:753px;
+    background: #02505A;
+    /* flex-wrap: wrap-reverse; */
+    transform: translateX(0%);
+    z-index: -1;
+}
+
+.humanTrial{
+    position: absolute;
+    width: min(388px, 100%);
+    height: min(574px, 100%);
+    left: 50%;
+    top: 19%;
+    /* z-index: 1; */
+}
+
+
+#type1 p{
+    width: min(413px, 100%);
+    height: min(509px, 100%);
+    margin-bottom: 20%;
+    
+}   
+
+#type1 .paragraph{
+    margin-top: 10%;
+    margin-left: 17%;
+    /* align-items: center; */
+}
+
+#type1 .syringe{
+    align-self: center;
+}
+
+/* FACT-CHECK ============================== */
+
+
+/* LOOP ==================================== */
+
+
+/* PEER SUPPORT ============================ */
+
+
+/* FOOTER ================================== */
+
+
+
+
+/* MEDIA Q ================================ */
+@media screen and (max-width: 1024px){
+
+    /* burger  */
+    .nav-links{
+        /* increase width to get more space between text  */
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+
+    /* burger  */
+    body{
+        overflow-x: hidden;
+    }
+
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 106.7vh;
+        top: 8vh;
+        background-color: #619699;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* pour totalité de l'écran width 100%  */
+        width: 50%;
+        /* 100% move the container off the screen / 0% on screen  */
+        transform: translateX(100%);
+        transform: transform 0.5s ease-in;
+        z-index: 1;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .logo{
+        /* valeur passe au dessus des autres */
+        z-index: 1;
+    }
+
+    .homepageContainer{
+            align-items: center;
+    }
+        
+    /* Boxes  */
+    /* .hide{
+        display: none;
+    } */
+}
+
+/* burger dans js */
+.nav-active{
+    transform: translateX(0%)
+}
+
+/* animation for the nav to slide nicely below the burger in js */
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* change the burger appearance */
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
