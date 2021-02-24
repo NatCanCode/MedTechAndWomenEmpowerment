@@ -316,6 +316,7 @@ h1 span{
     align-self: center;
 }
 
+
 /* FACT-CHECK ============================== */
 .factcheckContainer{
     max-width: 100%;
@@ -337,21 +338,22 @@ h1 span{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 0.5%;
+    gap: 0.9%;
     justify-content: space-between;
-    /* border: 4px solid orange; */
     margin-left: 7%;
     margin-right: 7%;
 }
 
 .facts p{
     width: 100%;
-    padding: 10%;
+    padding-top: 10% ;
+    padding-right: 9%;
+    padding-left: 12%;
     color: #FFFFF4;
     font-size: clamp(18px, 10vh, 21px);
     width: 235px;
     height: 180px;
-    line-height: 26px;
+    line-height: 29px;
     justify-content: center;
     align-items: center;
 }
@@ -368,7 +370,9 @@ h1 span{
 }
 
 .fact1{
-    background: #619699;
+    /* background: #619699; */
+    background: #AFC8B5;
+    align-items: center;
 }
 
 .fact2{
@@ -377,6 +381,7 @@ h1 span{
 
 .fact3{
     background: #02505A;
+    align-items: center;
 }
 
 .fact4{
@@ -389,6 +394,7 @@ h1 span{
 
 .fact6{
     background: #619699;
+    /* align-items: center; */
 }
 
 .fact7{
@@ -396,7 +402,9 @@ h1 span{
 }
 
 .fact8{
-    background: #02505A;
+    background: #AFC8B5;
+    /* background: #02505A; */
+    /* align-items: center; */
 }
 
 
@@ -491,7 +499,7 @@ button{
     height: min(59px, 100%);
     color: #02505A;
     font-size: clamp(13px, 10vw, 18px);
-    font-weight: 500;
+    font-weight: 700;
     justify-content: center;
     align-items: center;
     padding: 9px 8px;
@@ -505,8 +513,8 @@ button{
 }
 
 .slider{
-    width: max(428px, 100%);
-    height: max(450px, 100%);
+    min-width: 428px;
+    min-height: 450px;
     overflow: hidden;
     margin-right: 5%;
 }
@@ -592,9 +600,11 @@ button{
 }   
 
 #peerSupport .paragraph{
-    margin-top: 10%;
-    margin-left: 13%;
+    /* margin-top: 10%;
+    margin-left: 13%; */
     /* align-items: center; */
+    margin-top: 17%;
+    margin-left: 17%;
 }
 
 #peerSupport .syringe{
@@ -607,13 +617,8 @@ button{
 
 /* FOOTER ================================== */
 #footer{
-    justify-content: space-around;
-    align-items: center;
-    align-self: center;
-    /* align-self: stretch; */
-    min-height: 20vh;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    min-height: 13vh;
+    font-size: clamp(11px 10vh, 14px);
     background-color: #AFC8B5;
 }
 
@@ -621,19 +626,20 @@ button{
     padding: 5px;
 } */
 
+footer{
+    justify-content: space-between;
+    padding: 3% 2%
+}
+
 .footer a{
-    color: #02505A;
-    text-decoration: none;
+    color: #FFFFF4;
+    text-decoration: none; 
     letter-spacing: 1px;
-    font-weight: 500;
-    font-size: 18px;
     transition: color .5s;
 }
 
 .footer a:hover {
-    /* color: #02505A; */
-    /* color: #619699; */
-    color: #FFFFF4;
+    color: #02505A;
 }
 
 /* MEDIA QUERIES ================================ */
@@ -664,7 +670,7 @@ button{
         right: 0px;
         height: 106.7vh;
         top: 8vh;
-        background-color: #619699;
+        background-color: #AFC8B5;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -692,7 +698,14 @@ button{
     .homepageContainer{
             align-items: center;
     }
-        
+    
+
+   .footer{
+    flex-direction: column !important;
+    justify-content: stretch;
+    align-items: center;
+
+}
     /* Boxes  */
     /* .hide{
         display: none;
